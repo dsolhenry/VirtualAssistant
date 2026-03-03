@@ -1,1 +1,87 @@
+export default function RemoteOperationsWebsite() { return ( <div className="min-h-screen bg-gray-50 text-gray-800 p-6"> {/* HERO SECTION */} <section className="max-w-6xl mx-auto text-center py-20"> <h1 className="text-4xl md:text-6xl font-bold mb-6"> {{YOUR_MAIN_HEADLINE}} </h1> <p className="text-lg md:text-xl mb-8"> {{SHORT_DESCRIPTION_OF_WHO_YOU_HELP_AND_RESULT}} </p> <img
+src="{{HERO_IMAGE_URL}}"
+alt="Hero"
+className="mx-auto rounded-2xl shadow-lg w-full max-w-3xl"
+/> <div className="mt-6"> <audio controls className="mx-auto"> <source src="{{INTRO_AUDIO_URL}}" type="audio/mpeg" /> </audio> </div> </section>
 
+{/* ABOUT SECTION */}
+  <section className="max-w-5xl mx-auto py-16 grid md:grid-cols-2 gap-10 items-center">
+    <img
+      src="{{ABOUT_IMAGE_URL}}"
+      alt="About"
+      className="rounded-2xl shadow-md"
+    />
+    <div>
+      <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+      <p className="mb-4">{{ABOUT_DESCRIPTION}}</p>
+      <p><strong>Location:</strong> {{YOUR_LOCATION}}</p>
+      <p><strong>Email:</strong> {{YOUR_EMAIL}}</p>
+      <p><strong>Phone:</strong> {{YOUR_PHONE}}</p>
+    </div>
+  </section>
+
+  {/* SERVICES SECTION */}
+  <section className="bg-white py-20">
+    <div className="max-w-6xl mx-auto text-center">
+      <h2 className="text-3xl font-semibold mb-12">Services</h2>
+      <div className="grid md:grid-cols-3 gap-8">
+        <div className="p-6 rounded-2xl shadow-md">
+          <h3 className="text-xl font-bold mb-4">{{SERVICE_ONE_TITLE}}</h3>
+          <p>{{SERVICE_ONE_DESCRIPTION}}</p>
+        </div>
+        <div className="p-6 rounded-2xl shadow-md">
+          <h3 className="text-xl font-bold mb-4">{{SERVICE_TWO_TITLE}}</h3>
+          <p>{{SERVICE_TWO_DESCRIPTION}}</p>
+        </div>
+        <div className="p-6 rounded-2xl shadow-md">
+          <h3 className="text-xl font-bold mb-4">{{SERVICE_THREE_TITLE}}</h3>
+          <p>{{SERVICE_THREE_DESCRIPTION}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* PORTFOLIO SECTION */}
+  <section className="max-w-6xl mx-auto py-20">
+    <h2 className="text-3xl font-semibold text-center mb-12">Portfolio</h2>
+    <div className="grid md:grid-cols-3 gap-6">
+      <img src="{{PORTFOLIO_IMAGE_1}}" alt="Portfolio 1" className="rounded-2xl shadow-md" />
+      <img src="{{PORTFOLIO_IMAGE_2}}" alt="Portfolio 2" className="rounded-2xl shadow-md" />
+      <img src="{{PORTFOLIO_IMAGE_3}}" alt="Portfolio 3" className="rounded-2xl shadow-md" />
+    </div>
+  </section>
+
+  {/* CONTACT SECTION */}
+  <section className="bg-gray-100 py-20">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl font-semibold mb-8">Contact Me</h2>
+      <form className="grid gap-6">
+        <input
+          type="text"
+          placeholder="Your Name"
+          className="p-4 rounded-xl border"
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          className="p-4 rounded-xl border"
+        />
+        <textarea
+          placeholder="Your Message"
+          rows="5"
+          className="p-4 rounded-xl border"
+        />
+        <button className="bg-black text-white py-3 rounded-xl">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  {/* FOOTER */}
+  <footer className="text-center py-8">
+    <p>© {{CURRENT_YEAR}} {{YOUR_BUSINESS_NAME}}. All rights reserved.</p>
+  </footer>
+</div>
+
+); }
